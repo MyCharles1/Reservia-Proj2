@@ -1,0 +1,50 @@
+header {
+    display: flexbox;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.navs{
+    font-family: 'Raleway' , sans-serif;
+}
+
+.info {
+    font-family: 'Raleway' , sans-serif;
+    font-size: 10px;
+}
+
+#accomodations {
+    display: flexbox;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+}
+
+#mostpopular {
+    display: flexbox;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #0065FC;
+}
+
+h2 {
+    font-family: 'Raleway' , sans-serif;
+}
+
+.filters {
+    font-family: 'Raleway' , sans-serif;
+    display: flexbox;
+    flex-direction: row;
+}
+
+.filt {
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+}
+
+
