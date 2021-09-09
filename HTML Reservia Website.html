@@ -8,8 +8,11 @@
         <link href="Images\Reservia.svg" type="image/icon" rel="shortcut icon">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css" integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/fontawesome.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+
     <body>
+
         <header>
             <div id="logo">
           <img src="Images\Reservia.svg">
@@ -17,11 +20,11 @@
           <nav>
                   <div class="navs"><a href="">Accomodations</a></div>
                   <div class="navs"><a href="">Activities</a></div>
-                <div class="navs"><a href="">Sign Up</a></div>
+                <div class="sign-up"><a href="">Sign Up</a></div>
           </nav>
         </header>
 
-        <h2>Find a place for your dream vacation</h2>
+        <h3>Find a place for your dream vacation</h3>
         <p>Downtown or in nature</p>
 
         <div id="searchbar">
@@ -31,18 +34,19 @@
         </div>
 
         <div class="filters">
-            <h3>Filters</h3>
-            <div class="filt"><i class="fas filter-icons fa-money-bill-wave"></i>Low cost</div>
-            <div class="filt"><i class="fas filter-icons fa-child"></i>Family-friendly</div>
-            <div class="filt"><i class="fas filter-icons fa-heart"></i>Romantic</div>
-            <div class="filt"><i class="fas filter-icons fa-dog"></i>Pets Allowed</div>
+            <h4>Filters</h4>
+            <div class="filt"><div class="filter-icons"><i class="fas f-icons fa-money-bill-wave"></i></div>Low cost</div>
+            <div class="filt"><div class="filter-icons"><i class="fas f-icons fa-child"></i></div>Family-friendly</div>
+            <div class="filt"><div class="filter-icons"><i class="fas f-icons fa-heart"></i></div>Romantic</div>
+            <div class="filt"><div class="filter-icons"><i class="fas f-icons fa-dog"></i></div>Pets Allowed</div>
             </div>
 
-        <p><i class="fas info fa-info"></i>More than 500 accomodations are available in this city</p>
+        <div class="info">
+            <div class="info-icon"><i class="fas fa-info"></i></div>More than 500 accomodations are available in this city</div>
 
         <div id="section1">
         <div id="accomodations">
-          <h2>Accomodations in Marseille</h2>
+          <div id="acc-top"><h3>Accomodations in Marseille</h3></div>
           <div class="acc-pic-and-title">
               <img class="accomodation-pics" src="Images\marcus-loke-WQJvWU_HZFo-unsplash.jpg" title="Auberge la Cannebiere">
               <div class="acc-pic-title">
@@ -103,9 +107,10 @@
                     </ul>
                 </div>
             </div>
+            <div class="bottom-accomodations"><h4>Show more</h4></div>
         </div>
         <div id="most-popular">
-            <h2>Most Popular</h2>
+            <div id="popular-top"><h3>Most Popular</h3><i class="fas fa-chart-line"></i></div>
             <div class="mos-pic-and-title">
                 <img class="mos-pics" src=Images\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg title="Morning Sun Hotel">
                 <div class="mos-title">
@@ -116,12 +121,32 @@
                     </ul>
                 </div>
             </div>
+            <div class="mos-pic-and-title">
+                <img class="mos-pics" src=Images\aw-creative-VGs8z60yT2c-unsplash.jpg title="Au coeur de l'eau Bed and Breakfast">
+                <div class="mos-title">
+                    <ul>
+                        <li><strong>Au coeur de l'eau Bed and Breakfast</strong></li>
+                        <li>Night Starting at 71?</li>
+                        <li><i class="fas blue-star fa-star"></i><i class="fas blue-star fa-star"></i><i class="fas blue-star fa-star"></i><i class="fas blue-star fa-star"></i><i class="fas grey-star fa-star"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mos-pic-and-title">
+                <img class="mos-pics" src=Images\febrian-zakaria-sjvU0THccQA-unsplash.jpg title="Tout bleu et Blanc Hotel">
+                <div class="mos-title">
+                    <ul>
+                        <li><strong>Tout bleu et Blanc Hotel</strong></li>
+                        <li>Night Starting at 68?</li>
+                        <li><i class="fas blue-star fa-star"></i><i class="fas blue-star fa-star"></i><i class="fas blue-star fa-star"></i><i class="fas blue-star fa-star"></i><i class="fas grey-star fa-star"></i></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         </div>
 
         <footer>
             <div>
-                <h3>About</h3>
+                <h4>About</h4>
                 <ul>
                     <li>Site Map</li>
                     <li>General Terms and Conditions</li>
@@ -129,14 +154,14 @@
                 </ul>
             </div>
             <div>
-                <h3>Our Accomodations</h3>
+                <h4>Our Accomodations</h4>
                 <ul>
                     <li>Quality Assessment</li>
                     <li>You have a hotel?</li>
                 </ul>
             </div>
             <div>
-                <h3>Assistance</h3>
+                <h4>Assistance</h4>
                 <ul>
                     <li>Help Desk</li>
                     <li>Contact Us</li>
