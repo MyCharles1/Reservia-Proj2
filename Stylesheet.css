@@ -418,6 +418,47 @@ ul {
         height: 55px;
     }
 
+    #activities {
+        flex-direction: column;
+    }
+
+    .big-picture {
+        width: 100%;
+        height: 180px;
+    }
+
+    .big-pic {
+        width: 100%;
+        height: 150px;
+    }
+
+    .pic-column {
+        width: 100%;
+        height: 370px;
+    }
+
+    .small-pic {
+        width: 100%;
+        height: 180px;
+    }
+
+    .small-pics {
+        width: 100%;
+        height: 150px;
+    }
+
+    .long-pic {
+        width: 100%;
+    }
+
+    .long-pics {
+        width: 100%;
+    }
+
+    .act-pic-title {
+        width: 100%;
+    }
+
     footer{
         flex-direction: column;
         height: 350px;
