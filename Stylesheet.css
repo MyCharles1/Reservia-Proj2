@@ -1,11 +1,14 @@
 body {
-    font-family: 'Raleway' , sans-serif;
+    font-family: 'Raleway' , sans-serif; 
+    max-width: 1200px;
+    margin: auto;
 }
+
 header {
-    width: 100%;
+    width: 97%;
     display: flex;
-    flex-direction: row;
     justify-content: flex-end;
+    margin: auto;
 }
 
 #logo {
@@ -33,6 +36,7 @@ nav {
     display: flex;
     font-weight: bold;
     font-family: 'Raleway' , sans-serif;
+    margin-left: 1.5%;
 }
 
 #searchbutton {
@@ -58,6 +62,8 @@ nav {
 #searchspace {
     width: 180px;
     height: 18px;
+    display: flex;
+    align-items: center;
     font-size: small;
     padding: 5px;
     border-bottom: solid 1px #F2F2F2;
@@ -66,22 +72,18 @@ nav {
 
 #searchicon {
     background-color: #F2F2F2;
-    width: 20px;
-    height: 22px;
+    width: 30px;
+    height: 30px;
     border-radius: 10px 0px 0px 10px;
     display: flex;
     justify-content: center;
-    padding: 8px 5px 0px 5px;
+    align-items: center;
     font-size: small;
 }
 
 .info {
     display: flex;
-    justify-content: space-between;
-    width: 260px;
-    height: 50px;
-    font-family: 'Raleway' , sans-serif;
-    font-size: x-small;
+    margin-left: 1.5%;
 }
 
 .info-icon {
@@ -89,23 +91,35 @@ nav {
     border-radius: 20px;
     width: 15px;
     height: 15px;
-    margin-right: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #0065FC; 
+    color: #0065FC;
+    font-size: x-small;
+    margin-right: 10px; 
+}
+
+.info-text {
+    width: 25%;
+    font-size: small;
 }
 
 p {
     font-family: 'Raleway' , sans-serif;
-    font-size: x-small; 
+    font-size: x-small;
+    margin-left: 1.5%; 
 }
 
-#section1 {
+h3 {
+    margin-left: 1.5%;
+}
+
+section {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 97%;
     justify-content: space-between;
+    margin-left: 1.5%;
     margin-top: 15px;
     margin-bottom: 15px;
     font-family: 'Raleway' , sans-serif;
@@ -117,7 +131,7 @@ p {
     justify-content: space-around;
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 870px;
+    width: 65%;
     height: 550px;
     flex-wrap: wrap;
     padding: 5px;
@@ -174,14 +188,14 @@ p {
     flex-direction: column;
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 400px;
+    width: 30%;
     height: 560px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 #popular-top {
-    width: 331px;
+    width: 85%;
     height: 30px;
     display: flex;
     justify-content: space-between;
@@ -191,7 +205,7 @@ p {
 .mos-pic-and-title {
     display: flex;
     flex-direction: row;
-    width: 325px;
+    width: 85%;
     height: 125px;
     border: 3px solid white;
     border-radius: 20px;
@@ -228,7 +242,8 @@ h4 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 855px;
+    width: 60%;
+    margin-left: 1.5%;
     margin: 10px;
 }
 
@@ -268,65 +283,68 @@ a {
 
 #activities {
     display: flex;
+    width: 97%;
     margin-bottom: 25px;
+    margin-left: 1.5%;
     justify-content: space-between;
 }
 
 .big-picture {
-   width: 330px;
-   height: 450px;
+   width: 23%;
+   height: 400px;
    display: flex;
    flex-direction: column;
 }
 
 .big-pic {
-    width: 330px;
-    height: 440px;
+    width: 100%;
+    height: 370px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
 .pic-column {
-    width: 330px;
-    height: 450px;
+    width: 23%;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .small-pic {
-    width: 330px;
+    width: 100%;
     height: 230px;
     display: flex;
     flex-direction: column;
 }
 
 .small-pics {
-    width: 330px;
+    width: 100%;
     height: 200px;
     object-fit:cover;
     border-radius: 20px 20px 0px 0px;
 }
 
 .long-pic {
-    width: 330px;
-    height: 180px;
+    width: 100%;
+    height: 130px;
     display: flex;
     flex-direction: column;
 }
 
 .long-pics {
-    width: 330px;
-    height: 150px;
+    width: 100%;
+    height: 100px;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
 
 .act-pic-title {
-    width: 330px;
+    width: 100%;
     height: 30px;
     border-radius: 0px 0px 20px 20px;
     box-shadow: 0px 5px 5px #d8d7d794;
+    font-weight: bold;
 }
 
 footer{
@@ -344,14 +362,91 @@ ul {
     padding: 0;
 }
 
+.foot {
+    line-height: 30px;
+}
+
+.foot-head {
+    margin-left: 0px;
+}
+
+@media all and (min-width: 769px) and (max-width: 1100px) {
+
+    #searchbar {
+        width: unset;
+        justify-content: center;
+    }
+
+    #searchbutton {
+        display: none;
+    }
+
+    #searchbutton-mobile {
+        display: flex;
+        width: 40px;
+    }
+
+    .filters {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    section {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    #accomodations {
+        height: 750px 
+    }
+
+    #most-popular {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        height: 200px;
+        margin-bottom: 30px;
+    }
+
+    #popular-top {
+        width: 75%;
+        justify-content: center;
+    }
+
+    .mos-pic-and-title {
+        width: 30%
+    }
+
+    #activities {
+        flex-wrap: wrap;
+    }
+
+    #activities :nth-child(3) {order:2}
+
+    .big-picture {
+        width: 45%;
+        margin-bottom: 15px;
+    }
+
+    .pic-column {
+        width: 45%;
+        margin-bottom: 15px;
+    }
+}
+
 @media all and (max-width: 768px) {
+
+    body {
+        margin: 0px;
+    }
 
     header {
         justify-content: space-between;
         flex-wrap: wrap;
+        margin: 10px;
+        width: unset;
     }
 
-    header :nth-child(2) {order:3}
+    header :nth-child(3) {order:2}
 
     nav {
         width: 100%;
@@ -362,34 +457,82 @@ ul {
         width: 150px;
     }
 
+    p {
+        font-size: 15px;
+        margin-left: 10px;
+    }
+
+    #searchbar {
+        justify-content: center;
+        width: 100%;
+        height: 40px;
+        margin: 30px 0px;
+    }
+
+    #searchicon {
+        width: 40px;
+        height: 40px;
+    }
+
+    #searchspace {
+        width: 200px;
+        height: 28px;
+        display: flex;
+        font-size: 18px;
+    }
+
     #searchbutton {
         display: none;
     }
 
     #searchbutton-mobile {
         display: flex;
+        width: 40px;
     }
     
     .filters {
-        flex-direction: column;
         flex-wrap: wrap;
-        height: 170px;
-        width: 50%;
-        align-items: flex-start;
-        justify-content: space-around;
+        height: 220px;
+        width: 80%;
+        margin: 0px 0px 20px 10px;
+        justify-content: flex-start;
+    }
+
+    .filt {
+        height: 38px;
+        width: unset;
+        margin: 0px 20px 15px 0px;
+        padding-right: 10px;
+    }
+
+    .filter-icons {
+        width: 40px;
+        height: 40px;
+    }
+
+    .filters :nth-child(3) { order:4;}
+
+    .info {
+        width: 100%;
+        font-size: 15px;
+        justify-content: center;
+    }
+
+    .info-text {
+        width: 60%;
     }
 
     h4 {
-        width: 100%;
+        width: 80%;
+        margin-bottom: 10px;
     }
 
     h3 {
-        width: 100%;
+        margin-left: 10px;
+        width: 90%;
     }
 
-    .filters :nth-child(4) { order:5;}
-
-    #section1 {
+    section {
         flex-direction: column-reverse;
         width: 100%;
         margin-top: 15px;
@@ -399,7 +542,7 @@ ul {
     #most-popular {
         width: 100%;
         height: 500px;
-        margin: 15px;
+        margin: 0px;
         border-radius: 0px;
     }
 
@@ -407,15 +550,22 @@ ul {
         flex-direction: column;
         justify-content: space-around;
         width: 100%;
-        height: 1500px;
+        height: 1300px;
         background-color: white;
+        padding: 0px;
+        margin:20px 0px 50px 0px;
+    }
+
+    #acc-top {
+        margin: 0px;
     }
 
     .acc-pic-and-title {
         flex-direction: column;
-        width: 100%;
+        width: 85%;
         height: 175px;
         box-shadow: 0px 5px 5px #d8d7d794;
+        margin: auto;
     }
 
     .accomodation-pics {
@@ -430,51 +580,60 @@ ul {
 
     #activities {
         flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
 
     .big-picture {
-        width: 100%;
+        width: 85%;
         height: 180px;
     }
 
     .big-pic {
-        width: 100%;
         height: 150px;
     }
 
     .pic-column {
-        width: 100%;
+        width: 85%;
         height: 370px;
         margin: 10px 0px 10px 0px;
     }
 
     .small-pic {
-        width: 100%;
         height: 180px;
     }
 
     .small-pics {
-        width: 100%;
         height: 150px;
     }
 
     .long-pic {
-        width: 100%;
+        height: 180px;
     }
 
     .long-pics {
-        width: 100%;
+        height: 150px;
     }
 
     .act-pic-title {
-        width: 100%;
+        padding: 0px;
     }
 
     footer{
         flex-direction: column;
-        height: 350px;
-        padding: 25px;
+        height: 450px;
         width: 100%;
+        margin-top: 25px;
+    }
+
+    .foot-head {
+        margin: 20px 0px 0px 20px;
+    }
+
+    .foot {
+        line-height: 30px;
+        margin: 20px;
     }
 }
+
 
