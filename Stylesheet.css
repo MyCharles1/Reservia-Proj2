@@ -128,13 +128,37 @@ section {
     justify-content: space-between;
     margin-left: 1.5%;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     font-family: 'Raleway' , sans-serif;
 }
 
 h5 {
     margin: auto;
     font-size: small;
+}
+
+.card-links {
+    text-decoration: none;
+}
+
+.card-links:hover {
+    text-decoration: none;
+}
+
+#accomodation-cards {
+    text-decoration: none;
+}
+
+#accomodation-cards:hover {
+    text-decoration: none;
+}
+
+#activity-cards:hover {
+    text-decoration: none;
+}
+
+#activity-cards {
+    text-decoration: none;
 }
 
 #accomodations {
@@ -304,6 +328,7 @@ a {
     width: 97%;
     margin-bottom: 25px;
     margin-left: 1.5%;
+    margin-top: 20px;
     justify-content: space-between;
 }
 
@@ -372,6 +397,7 @@ footer{
     height:200px;
     justify-content: space-around;
     font-family: 'Raleway' , sans-serif;
+    margin-top: 70px;
 }
 
 ul {
